@@ -5,37 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Discover Towing</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Anton+SC&display=swap');
-        
-        .anton-sc-regular {
-          font-family: "Anton SC", serif;
-          font-weight: 400;
-          font-style: normal;
-        }
-
-        h1 {
-            font-family: "Anton SC", serif;
-        }
-        
         body {
-            font-family: Ariel, sans-serif;
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f8f9fa;
             color: #333;
             scroll-behavior: smooth;
         }
-
-        #book-now {
-            border: 2px solid white; 
-            border-radius: 5px; 
-            padding: 10px;
-        }
-
-        #book-now:hover {
-            padding: 5px
-        }    
-        
         header {
             background-color: #000;
             color: #fff;
@@ -54,32 +31,53 @@
             font-size: 18px;
             font-weight: bold;
         }
+        .nav {
+            background-color: #222;
+            padding: 10px;
+            text-align: center;
+        }
+        .nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            display: inline-block;
+        }
         .hero {
             position: relative;
             text-align: center;
             color: white;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
         }
         .hero img {
             width: 100%;
             height: auto;
+            border-radius: 10px;
         }
         .hero-text {
             position: absolute;
             top: 40%;
             left: 50%;
             transform: translate(-50%, -50%);
-            font-size: 22px;
+            font-size: 24px;
             font-weight: bold;
             background: rgba(0, 0, 0, 0.6);
-            padding: 10px;
+            padding: 15px;
             border-radius: 5px;
+            width: 80%;
+            text-align: center;
         }
         .section {
+            max-width: 1100px;
+            margin: 0 auto;
             padding: 40px 20px;
             text-align: center;
         }
-        .services {
+        .services, .about, .contact-form {
             background-color: #fff;
+            border-radius: 10px;
+            padding: 30px;
         }
         .cta {
             background-color: #007BFF;
@@ -102,8 +100,8 @@
         @media (max-width: 768px) {
             .hero-text {
                 font-size: 18px;
-                top: 35%;
-                padding: 8px;
+                padding: 10px;
+                width: 90%;
             }
             .section {
                 padding: 30px 15px;
@@ -113,52 +111,54 @@
 </head>
 <body>
     <div class="contact">
-        <p>📞 <a href="tel:3017686323" id="book-now">Book Now</a> | 📧 sample@email.com</p>
+        <p>📞 <a href="tel:3017686323">301-768-6323</a> | 📧 sample@email.com</p>
     </div>
-
+    
     <header>
         <h1>Discover Towing</h1>
     </header>
-
+    
+    <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    
     <div class="hero">
-        <img src="tow-truck.jpg" alt="Discover Towing Truck">
-        <div class="hero-text">Discover your next tower from Discover Towing</div>
+        <img src="stock-tow-truck.jpg" alt="Discover Towing Truck">
+        <div class="hero-text">Dependable Roadside Assistance, Towing, and Wrecker Services</div>
     </div>
-
-    <section class="section about">
+    
+    <section id="about" class="section about">
         <h2>About Us</h2>
-        <p>Discover Towing has been serving areas of Howard County for 11+ years. Discover Towing offers exceptional services with turbo timing to the area of service.</p>
+        <p>Discover Towing has been serving Howard County for over 11 years, offering exceptional services with turbo timing. We are a family-owned business, fully licensed and insured, dedicated to providing fast and reliable roadside assistance.</p>
     </section>
-
-    <section class="section services">
+    
+    <section id="services" class="section services">
         <h2>Our Services</h2>
-        <p>We offer reliable towing and roadside assistance, including:</p>
         <ul>
-            <li>Regular Towing</li>
+            <li>Light-Duty Towing</li>
+            <li>Medium-Duty Towing</li>
+            <li>Flat-bed Towing</li>
             <li>Jump-starts</li>
             <li>Lockout Services</li>
             <li>Tire Changes</li>
+            <li>Winch Outs</li>
+            <li>Fuel Delivery</li>
             <li>Roadside Assistance</li>
         </ul>
     </section>
-
-    <section class="section selling-points">
-        <h2>Why Choose Us?</h2>
-        <p>✔ Cash Price</p>
-        <p>✔ Experienced Drivers</p>
-        <p>✔ Licensed and Insured</p>
-        <p>✔ Fast Response Time</p>
+    
+    <section id="contact" class="section contact-form">
+        <h2>Contact Us</h2>
+        <p>📍 Serving Howard County and Surrounding Areas</p>
+        <p>📧 sample@email.com</p>
+        <p>📞 301-768-6323</p>
+        <a href="tel:3017686323" class="cta">Call Now</a>
     </section>
-
-    <section class="section map">
-        <h2>Service Area</h2>
-        <ul>
-                <li>We service all around Howard County and immediate neighboring areas.</li>
-        </ul>
-        </section>
-
+    
     <footer>
-        <p>📞 301-768-6323 | 📧 sample@email.com</p>
+        <p>&copy; 2025 Discover Towing | Privacy Policy</p>
     </footer>
 </body>
 </html>
