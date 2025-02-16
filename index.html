@@ -9,76 +9,109 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #000;
-            color: #fff;
+            background-color: #f8f9fa;
+            color: #333;
+            scroll-behavior: smooth;
         }
         header {
+            background-color: #000;
+            color: #fff;
             text-align: center;
             padding: 20px;
-            background-color: #FF6600;
         }
-        h1 {
-            margin: 0;
-            font-size: 36px;
+        .hero {
+            position: relative;
+            text-align: center;
+            color: white;
         }
-        .container {
-            padding: 20px;
-        }
-        .hours, .contact {
-            margin-top: 20px;
-            padding: 10px;
-            background-color: #333;
-            border-radius: 8px;
-        }
-        .button {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 15px 25px;
-            background-color: #FF6600;
-            color: #fff;
-            text-decoration: none;
-            border-radius: 5px;
-            font-size: 18px;
-        }
-        .truck-image {
+        .hero img {
             width: 100%;
             height: auto;
-            border-radius: 8px;
-            margin-top: 30px;
+        }
+        .hero-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .section {
+            padding: 50px;
+            text-align: center;
+        }
+        .services {
+            background-color: #fff;
+        }
+        .cta {
+            background-color: #007BFF;
+            color: white;
+            padding: 15px 20px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+        .cta:hover {
+            background-color: #0056b3;
         }
         footer {
+            background-color: #000;
+            color: white;
             text-align: center;
             padding: 20px;
-            background-color: #222;
         }
     </style>
 </head>
 <body>
+    <header>
+        <h1>Discover Towing</h1>
+    </header>
 
-<header>
-    <h1>Discover Towing</h1>
-    <p>Your Reliable Towing Service in Howard County</p>
-</header>
-
-<div class="container">
-    <div class="hours">
-        <h2>Towing Hours</h2>
-        <p>9:00 AM - 6:30 PM</p>
+    <div class="hero">
+        <img src="stock-tow-truck.jpg" alt="Discover Towing Truck">
+        <div class="hero-text">Discover your next tower from Discover Towing</div>
     </div>
 
-    <div class="contact">
+    <section class="section about">
+        <h2>About Us</h2>
+        <p>Discover Towing has been serving areas of Howard County for 11+ years. Discover Towing offers exceptional services with turbo timing to the area of service.</p>
+    </section>
+
+    <section class="section services">
+        <h2>Our Services</h2>
+        <p>We offer reliable towing and roadside assistance, including:</p>
+        <ul>
+            <li>Regular Towing</li>
+            <li>Jump-starts</li>
+            <li>Lockout Services</li>
+            <li>Tire Changes</li>
+            <li>Roadside Assistance</li>
+        </ul>
+    </section>
+
+    <section class="section selling-points">
+        <h2>Why Choose Us?</h2>
+        <p>✔ Experienced Drivers</p>
+        <p>✔ Licensed and Insured</p>
+        <p>✔ Fast Response Time</p>
+        <p>✔ Cash Price</p>
+    </section>
+
+    <section class="section contact">
         <h2>Contact Us</h2>
-        <p>Phone: <a href="tel:+1-301-768-6323" style="color: #FF6600;">+1-301-768-6323</a></p>
-    </div>
+        <p>📞 <a href="tel:3017686323">301-768-6323</a></p>
+        <p>📧 sample@email.com</p>
+        <a class="cta" href="tel:3017686323">Book Now</a>
+    </section>
 
-    <a href="tel:+1-301-768-6323" class="button">Book Now</a>
+    <section class="section map">
+        <h2>Service Area</h2>
+        <iframe src="https://www.google.com/maps/embed/v1/place?q=Howard+County,+MD&key=YOUR_GOOGLE_MAPS_API_KEY" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
 
-    <img src="path-to-your-truck-image.jpg" alt="Discover Towing Truck" class="truck-image">
-</div>
-
-<footer>
-    <p>&copy; 2025 Discover Towing | All Rights Reserved</p>
-</footer>
-
+    <footer>
+        <p>📞 301-768-6323 | 📧 sample@email.com</p>
+    </footer>
 </body>
 </html>
