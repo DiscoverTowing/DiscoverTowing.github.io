@@ -19,6 +19,18 @@
             text-align: center;
             padding: 20px;
         }
+        .contact {
+            background-color: #007BFF;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+        .contact a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+        }
         .hero {
             position: relative;
             text-align: center;
@@ -30,14 +42,17 @@
         }
         .hero-text {
             position: absolute;
-            top: 50%;
+            top: 40%;
             left: 50%;
             transform: translate(-50%, -50%);
-            font-size: 24px;
+            font-size: 22px;
             font-weight: bold;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 10px;
+            border-radius: 5px;
         }
         .section {
-            padding: 50px;
+            padding: 40px 20px;
             text-align: center;
         }
         .services {
@@ -61,9 +76,23 @@
             text-align: center;
             padding: 20px;
         }
+        @media (max-width: 768px) {
+            .hero-text {
+                font-size: 18px;
+                top: 35%;
+                padding: 8px;
+            }
+            .section {
+                padding: 30px 15px;
+            }
+        }
     </style>
 </head>
 <body>
+    <div class="contact">
+        <p>📞 <a href="tel:3017686323">301-768-6323</a> | 📧 sample@email.com</p>
+    </div>
+
     <header>
         <h1>Discover Towing</h1>
     </header>
@@ -98,16 +127,9 @@
         <p>✔ Cash Price</p>
     </section>
 
-    <section class="section contact">
-        <h2>Contact Us</h2>
-        <p>📞 <a href="tel:3017686323">301-768-6323</a></p>
-        <p>📧 sample@email.com</p>
-        <a class="cta" href="tel:3017686323">Book Now</a>
-    </section>
-
     <section class="section map">
         <h2>Service Area</h2>
-        <iframe src="https://www.google.com/maps/embed/v1/place?q=Howard+County,+MD&key=YOUR_GOOGLE_MAPS_API_KEY" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <iframe src="https://www.google.com/maps/embed/v1/place?q=Howard+County,+MD&key=YOUR_GOOGLE_MAPS_API_KEY" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </section>
 
     <footer>
