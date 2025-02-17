@@ -5,6 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Discover Towing</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+        .space-grotesk {
+        font-family: "Space Grotesk", serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
+    }
+
+    h1 {
+        font-family: "Space Grotesk", serif;
+    }
+
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -17,7 +30,7 @@
             background-color: #000;
             color: #fff;
             text-align: center;
-            padding: 20px;
+            padding: 10px;
         }
         .contact {
             background-color: #007BFF;
@@ -35,6 +48,7 @@
             background-color: #222;
             padding: 10px;
             text-align: center;
+            border-radius: 0px 0px 20px 20px;
         }
         .nav a {
             color: white;
@@ -45,13 +59,9 @@
         .hero {
             position: relative;
             text-align: center;
-            color: white;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
         }
         .hero img {
-            width: 100%;
+            width: 25%;
             height: auto;
             border-radius: 10px;
         }
@@ -76,8 +86,7 @@
         }
         .services, .about, .contact-form {
             background-color: #fff;
-            border-radius: 10px;
-            padding: 30px;
+            padding: 20px;
         }
         .cta {
             background-color: #007BFF;
@@ -126,32 +135,37 @@
     
     <div class="hero">
         <img src="tow-truck.jpg" alt="Discover Towing Truck" style="border-radius: 8px;
-width: 20%;">
+height: 5%;">
     </div>
-    
-    <section id="about" class="section about">
-        <h2>About Us</h2>
-        <p>Discover Towing has been serving Howard County for over 11 years, offering exceptional services with turbo timing. We are a family-owned business, fully licensed and insured, dedicated to providing fast and reliable roadside assistance.</p>
-    </section>
-    
-    <section id="services" class="section services">
-        <h2>Our Services</h2>
-        <ul>
-            <li>Regular Towing</li>
-            <li>Jump-starts</li>
-            <li>Lockout Services</li>
-            <li>Tire Changes</li>
-            <li>Roadside Assistance</li>
-        </ul>
-    </section>
-    
-    <section id="contact" class="section contact-form">
-        <h2>Contact Us</h2>
-        <p>📍 Serving Howard County and Surrounding Areas</p>
-        <p>📧 discovertowingmaryland@gmail.com</p>
-        <p>📞 301-768-6323</p>
-        <a href="tel:3017686323" class="cta">Call Now</a>
-    </section>
+    <div id="contents">
+        
+        <section id="contact" class="section contact-form">
+            <h2>Contact Us</h2>
+            <p>📍 Serving Howard County and Surrounding Areas</p>
+            <p>📧 discovertowingmaryland@gmail.com</p>
+            <p>📞 301-768-6323</p>
+            <a href="tel:3017686323" class="cta">Call Now</a>
+        </section>
+
+        <section id="services" class="section services">
+            <h2>Our Services</h2>
+            <ul>
+                <li>Regular Towing</li>
+                <li>Jump-starts</li>
+                <li>Lockout Services</li>
+                <li>Tire Changes</li>
+                <li>Roadside Assistance</li>
+            </ul>
+        </section>
+
+
+        <section id="about" class="section about">
+            <h2>About Us</h2>
+            <p>Discover Towing has been serving Howard County for over 11 years, offering exceptional services with turbo timing. We are a family-owned business, fully licensed and insured, dedicated to providing fast and reliable roadside assistance.</p>
+        </section>
+    </div>
+
+
     
     <footer>
         <p>&copy; 2025 Discover Towing | Privacy Policy</p>
